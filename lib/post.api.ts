@@ -20,7 +20,7 @@ export function createPost(data: {
 
 export function updatePost(id: number, data: Partial<{
   title: string;
-  content: string;
+  detail: string;
 }>) {
   return apiFetch(`/post/${id}`, {
     method: 'PATCH',
